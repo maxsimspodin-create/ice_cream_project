@@ -228,10 +228,7 @@ ol {
 }
 .products__item {
 	flex-basis: 297px;
-	/* flex-basis: calc(
-		(100% - var(--carousel-gap) * (var(--carousel-items) - 1)) /
-			var(--carousel-items)
-	); */
+
 	flex-shrink: 0;
 }
 .product__image {
@@ -244,18 +241,9 @@ ol {
 .product__wrapper {
 	position: relative;
 	top: -24px;
-	/* position: relative;
-	z-index: 1;
-	margin-top: -24px; */
 	padding: 24px 30px;
 	background-color: var(--secondary-bg);
 	border-radius: 20px;
-}
-.product__name {
-	font-family: 'Hind Madurai', sans-serif;
-	font-weight: 700;
-	font-size: 26px;
-	margin-bottom: 18px;
 }
 .product__description {
 	font-size: 16px;
@@ -342,7 +330,8 @@ ol {
 
 /* !!! QUESTION SECTION STYLES !!! */
 .question-section {
-	height: 684px;
+	padding-block: 60px;
+	box-sizing: border-box;
 }
 .question-container {
 	height: 100%;
@@ -408,10 +397,6 @@ ol {
 }
 .footer__logo img {
 	width: 100%;
-}
-.footer__text {
-	font-size: 14px;
-	margin-bottom: 24px;
 }
 .footer__panel {
 	flex-grow: 1;

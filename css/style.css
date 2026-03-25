@@ -107,6 +107,28 @@ ol {
 	align-items: center;
 	justify-content: space-between;
 }
+.navigation__link {
+	position: relative;
+	text-decoration: none;
+	padding-bottom: 10px;
+}
+.navigation__link::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+
+	width: 0;
+	height: 3px;
+
+	background-color: white;
+	border-radius: 2px;
+	transition: width 0.3s;
+}
+
+.navigation__link:hover::after {
+	width: 100%;
+}
 .navigation__list {
 	display: flex;
 	gap: 95px;
